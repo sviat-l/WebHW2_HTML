@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
     <title>Treloo</title>
 </head>
 
@@ -32,39 +33,47 @@
 <!-- FRAME 4 -->
         <section class="servises">
             <nav class="servises-tabs">
-                <input type="radio" id="flight-tab" name="servise-tab" checked>
+                <input type="radio" class="flight-tab" name="servise-tab" checked>
                     <label for="flight-tab">
                         <img class="plane-img" src="./icons/Airplane Mode On.svg" alt="airplane-icon">
                         Flight</label>
                 </input>
-                <input type="radio" id="hotel-tab" name="servise-tab">
+                <input type="radio" class="hotel-tab" name="servise-tab">
                     <label for="hotel-tab">
                         <img class="hotel-img" src="./icons/Hotel Star.svg" alt="hotel-icon"/>
                         Hotel</label>
                 </input>
             </nav>
 
-            <form class="tickets-info">
+            <div class="tickets-info">
                 <form class="tickets-location">
-                    <span class="leaving-from-text">Leaving from</span>
-                    <input class="input" type="search" placeholder="Dubai"/>
+                    <div class = location-info-left>
+                        <span class="leaving-from-text">Leaving from</span>
+                        <input class="input" type="search" placeholder="Dubai"/>
+                    </div>
                     <img class="flight-location-img" src="./icons/Airplane Mode On Location.svg" alt="airplane-icon"/>
-                    <span class="going-to-text">Going to</span>
-                    <input class="input" type="search" placeholder="New York"/>
+                    <div class = location-info-right >
+                        <span class="going-to-text">Going to</span>
+                        <input class="input" type="search" placeholder="New York"/>
+                    </div>
                 </form>
                 <form class="tickets-time">
-                    <span class="leave-text">Leave</span>
-                    <img class="flight-right-img" src="./icons/Airplane Mode On.svg" alt="airplane-icon"/>
-                    <input type="date" class="flight-start" name="trip-start" value="2023-07-22"/>
+                    <div class = location-info-left>
+                        <span class="leave-text">Leave</span>
+                        <img class="flight-right-img" src="./icons/Airplane Mode On.svg" alt="airplane-icon"/>
+                        <input type="date" class="flight-start" name="trip-start" value="2023-07-22"/>
+                    </div>
                     <img class="calendar-img" src="./icons/calendar.svg" alt="calendar-icon"/>
-                    <span class="return-text">Return</span>
-                    <img class="flight-left-img" src="./icons/Airplane Mode On.svg" alt="airplane-icon"/>
-                    <input type="date" class="flight-return" name="trip-return" value="2023-07-22"/>
+                    <div class = location-info-left>
+                        <span class="return-text">Return</span>
+                        <img class="flight-left-img" src="./icons/Airplane Mode On.svg" alt="airplane-icon"/>
+                        <input type="date" class="flight-return" name="trip-return" value="2023-07-22"/>
+                    </div>
                 </form>
                 <button class="tickets-search">
                     <img class="search-servise" src="./icons/search-button.svg" alt="search-button">
                 </button>
-            </form>
+            </div>
         </section>
 <!-- FRAME 5 -->
         <section class="special-offers">
@@ -84,29 +93,42 @@
                 <article class="offers-info-left">
                     <img class="offers-img" src="./icons/loga-sea.png" alt="loga-sea"/>
                     <p class="offer-date-vertical">24 FEB 2022</p>
-                    <p class="offer-purpose-type">Relax</p>
-                    <p class="offer-duration">3 Days, 3 Nights</p>
+                    <div class="offer-purpose-type-duration">
+                        <p class="offer-purpose-type">Relax</p>
+                        <p class="offer-duration">3 Days, 3 Nights</p>
+                    </div>
                     <p class="offer-location">Loga Sea</p>
-                    <p class="offer-price">700$/Person</p>
-                    <button class="offer-book-button">Book Now</button>
+                    <div class="offer-price-book-button">
+                        <p class="offer-price">700$/Person</p>
+                        <button class="offer-book-button">Book Now</button>
+                    </div>
+                    
                 </article>
                 <article class="offers-info-center">
                     <img class="offers-img" src="./icons/ansgar-scheffold.png" alt="ansgar-scheffold"/>
                     <p class="offer-date-vertical">18 JUN 2022</p>
-                    <p class="offer-purpose-type">Adventure</p>
-                    <p class="offer-duration">4 Days, 3 Nights</p>
+                    <div class="offer-purpose-type-duration">
+                        <p class="offer-purpose-type">Adventure</p>
+                        <p class="offer-duration">4 Days, 3 Nights</p>
+                    </div>
                     <p class="offer-location">Ansgar Scheffold</p>
-                    <p class="offer-price">400$/Person</p>
-                    <button class="offer-book-button">Book Now</button>
+                    <div class="offer-price-book-button">
+                        <p class="offer-price">400$/Person</p>
+                        <button class="offer-book-button">Book Now</button>
+                    </div>
                 </article>
                 <article class="offers-info-right">
                     <img class="offers-img" src="./icons/lona_x.png" alt="lona-x"/>
                     <p class="offer-date-vertical">22 DEC 2022</p>
-                    <p class="offer-purpose-type">Relax</p>
-                    <p class="offer-duration">7 Days, 6 Nights</p>
+                    <div class="offer-purpose-type-duration">
+                        <p class="offer-purpose-type">Relax</p>
+                        <p class="offer-duration">7 Days, 6 Nights</p>
+                    </div>
                     <p class="offer-location">Lona X</p>
-                    <p class="offer-price">340$/Person</p>
-                    <button class="offer-book-button">Book Now</button>
+                    <div class="offer-price-book-button">
+                        <p class="offer-price">340$/Person</p>
+                        <button class="offer-book-button">Book Now</button>
+                    </div>
                 </article>
             </div>
         </section>
@@ -183,26 +205,32 @@
 <!-- FRAME 8 -->
         <section class="feedbacks-section">
             <div class="feedbacks">
-                <article class="feedback-left">
+                <article class="feedback">
                     <img class="quate-img" src="./icons/quote.svg" alt="quate-img"/>
                     <p class="feedback-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
                     <a class="feedback-author-link", href="#">-Vand D</a>
                     <p class="some-author-text">Happy Treloo</p>
-                    <img class="feedback-author-img" src="./icons/feedback-author1.png" alt="author1-img"/>
-                    <p class="author-rating">&#11088 4.5</p>
+                    <div class="feedback-image-wrapper">
+                        <img class="feedback-author-img" src="./icons/feedback-author1.png" alt="author1-img"/>
+                        <p class="author-rating">&#11088 4.5</p>
+                    </div>
+
                 </article>
-                <article class="feedback-right">
+                <article class="feedback">
                     <img class="quate-img" src="./icons/quote.svg" alt="quate-img"/>
                     <p class="feedback-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
                     <a class="feedback-author-link", href="#">-Tru Vio</a>
                     <p class="some-author-text">Happy Treloo</p>
-                    <img class="feedback-author-img" src="./icons/feedback-author2.png" alt="author2-img"/>
-                    <p class="author-rating">&#11088 4.9</p>
+                    <div class="feedback-image-wrapper">
+                        <img class="feedback-author-img" src="./icons/feedback-author2.png" alt="author2-img"/>
+                        <p class="author-rating">&#11088 4.9</p>
+                    </div>
+
                 </article>
             </div>
             <nav class="feedbacks-navigation">
                 <button class="feedback-arrow-key-left"><img src="./icons/arrow.svg"></button>
-                <button class="feedback-arrow-key-right"><img src="./icons/arrow.svg"></button>
+                <button class="feedback-arrow-key-right"><img src="./icons/arrow2.svg"></button>
             </nav>
         </section>
 
